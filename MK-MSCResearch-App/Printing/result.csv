@@ -1,0 +1,201 @@
+PatientID,Simulated,Name,Age,Sex,Smoking,OralHygiene,Notes,SlideCode,Group,TargetFix_min,ActualFix_min,O1_Nuclear,O1_Cytoplasmic,O1_Morphology,O1_Background,O1_Overall,O1_Total,O1_Class,O2_Nuclear,O2_Cytoplasmic,O2_Morphology,O2_Background,O2_Overall,O2_Total,O2_Class
+S01,Yes,Ahmed Yousif,52,Male,No,Poor,,S01-A,A,1,1.09,1,2,1,1,1,6,Poor,1,2,1,1,1,6,Poor
+S01,Yes,Ahmed Yousif,52,Male,No,Poor,,S01-B,B,10,10.05,2,2,2,2,2,10,Satisfactory,2,2,2,2,2,10,Satisfactory
+S01,Yes,Ahmed Yousif,52,Male,No,Poor,,S01-C,C,15,15.22,2,2,2,3,3,12,Optimal,2,2,3,3,3,13,Optimal
+S01,Yes,Ahmed Yousif,52,Male,No,Poor,,S01-D,D,60,61.47,3,3,3,2,3,14,Optimal,3,3,3,3,3,15,Optimal
+S01,Yes,Ahmed Yousif,52,Male,No,Poor,,S01-E,E,1440,1442.21,3,3,2,3,2,13,Optimal,3,3,2,2,2,12,Optimal
+S02,Yes,Musa Ibrahim,31,Male,No,Poor,,S02-A,A,1,1.37,1,2,2,1,1,7,Satisfactory,1,2,3,2,1,9,Satisfactory
+S02,Yes,Musa Ibrahim,31,Male,No,Poor,,S02-B,B,10,10.15,2,3,2,1,3,11,Satisfactory,2,3,2,1,3,11,Satisfactory
+S02,Yes,Musa Ibrahim,31,Male,No,Poor,,S02-C,C,15,15.16,2,3,2,3,2,12,Optimal,3,3,2,3,2,13,Optimal
+S02,Yes,Musa Ibrahim,31,Male,No,Poor,,S02-D,D,60,60.58,3,3,3,3,3,15,Optimal,3,3,3,3,3,15,Optimal
+S02,Yes,Musa Ibrahim,31,Male,No,Poor,,S02-E,E,1440,1443.00,3,3,3,3,3,15,Optimal,3,3,3,3,2,14,Optimal
+S03,Yes,Noura Abdalla,26,Female,No,Fair,Dry mouth reported,S03-A,A,1,1.35,1,2,1,2,2,8,Satisfactory,1,3,1,2,2,9,Satisfactory
+S03,Yes,Noura Abdalla,26,Female,No,Fair,Dry mouth reported,S03-B,B,10,10.27,3,3,1,2,3,12,Optimal,3,2,2,2,3,12,Optimal
+S03,Yes,Noura Abdalla,26,Female,No,Fair,Dry mouth reported,S03-C,C,15,15.34,3,2,3,2,3,13,Optimal,3,2,2,2,3,12,Optimal
+S03,Yes,Noura Abdalla,26,Female,No,Fair,Dry mouth reported,S03-D,D,60,61.40,3,3,2,3,3,14,Optimal,3,3,2,3,3,14,Optimal
+S03,Yes,Noura Abdalla,26,Female,No,Fair,Dry mouth reported,S03-E,E,1440,1442.05,3,3,2,2,2,12,Optimal,3,3,2,2,2,12,Optimal
+S04,Yes,Reem Khalid,49,Female,No,Fair,Cooperative patient,S04-A,A,1,1.06,1,1,1,1,2,6,Poor,2,1,1,1,3,8,Satisfactory
+S04,Yes,Reem Khalid,49,Female,No,Fair,Cooperative patient,S04-B,B,10,10.23,2,2,3,2,2,11,Satisfactory,2,2,3,2,2,11,Satisfactory
+S04,Yes,Reem Khalid,49,Female,No,Fair,Cooperative patient,S04-C,C,15,15.24,2,3,3,2,3,13,Optimal,2,3,3,2,3,13,Optimal
+S04,Yes,Reem Khalid,49,Female,No,Fair,Cooperative patient,S04-D,D,60,60.19,2,2,3,2,3,12,Optimal,3,2,3,1,3,12,Optimal
+S04,Yes,Reem Khalid,49,Female,No,Fair,Cooperative patient,S04-E,E,1440,1440.68,3,3,2,2,2,12,Optimal,2,3,2,2,2,11,Satisfactory
+S05,Yes,Hawa Mahmoud,21,Female,No,Good,Dry mouth reported,S05-A,A,1,1.11,1,1,1,2,1,6,Poor,1,1,1,2,1,6,Poor
+S05,Yes,Hawa Mahmoud,21,Female,No,Good,Dry mouth reported,S05-B,B,10,10.04,2,2,2,1,3,10,Satisfactory,2,2,2,0,3,9,Satisfactory
+S05,Yes,Hawa Mahmoud,21,Female,No,Good,Dry mouth reported,S05-C,C,15,15.04,3,2,3,3,3,14,Optimal,3,2,3,3,2,13,Optimal
+S05,Yes,Hawa Mahmoud,21,Female,No,Good,Dry mouth reported,S05-D,D,60,61.06,2,3,2,2,3,12,Optimal,2,3,2,2,3,12,Optimal
+S05,Yes,Hawa Mahmoud,21,Female,No,Good,Dry mouth reported,S05-E,E,1440,1440.52,2,2,2,3,2,11,Satisfactory,2,2,2,3,2,11,Satisfactory
+S06,Yes,Layla Omer,27,Female,No,Fair,Slight cheek irritation,S06-A,A,1,1.33,2,2,2,2,1,9,Satisfactory,2,2,2,2,1,9,Satisfactory
+S06,Yes,Layla Omer,27,Female,No,Fair,Slight cheek irritation,S06-B,B,10,10.18,1,1,3,3,3,11,Satisfactory,1,1,3,3,3,11,Satisfactory
+S06,Yes,Layla Omer,27,Female,No,Fair,Slight cheek irritation,S06-C,C,15,15.32,3,2,2,2,3,12,Optimal,2,2,2,3,3,12,Optimal
+S06,Yes,Layla Omer,27,Female,No,Fair,Slight cheek irritation,S06-D,D,60,60.41,3,2,3,3,3,14,Optimal,3,2,3,3,3,14,Optimal
+S06,Yes,Layla Omer,27,Female,No,Fair,Slight cheek irritation,S06-E,E,1440,1440.84,3,3,3,3,3,15,Optimal,3,3,3,3,3,15,Optimal
+S07,Yes,Noura Mahmoud,58,Female,No,Poor,,S07-A,A,1,1.41,1,1,2,1,1,6,Poor,1,1,2,1,2,7,Satisfactory
+S07,Yes,Noura Mahmoud,58,Female,No,Poor,,S07-B,B,10,10.17,3,3,2,1,2,11,Satisfactory,2,3,3,1,2,11,Satisfactory
+S07,Yes,Noura Mahmoud,58,Female,No,Poor,,S07-C,C,15,15.42,2,3,3,3,2,13,Optimal,2,3,2,3,2,12,Optimal
+S07,Yes,Noura Mahmoud,58,Female,No,Poor,,S07-D,D,60,61.38,2,3,3,3,3,14,Optimal,2,3,3,3,3,14,Optimal
+S07,Yes,Noura Mahmoud,58,Female,No,Poor,,S07-E,E,1440,1441.40,2,3,3,3,2,13,Optimal,2,3,3,3,2,13,Optimal
+S08,Yes,Sara Ahmed,52,Female,No,Good,,S08-A,A,1,1.24,2,1,1,2,2,8,Satisfactory,2,1,1,2,2,8,Satisfactory
+S08,Yes,Sara Ahmed,52,Female,No,Good,,S08-B,B,10,10.37,3,1,3,2,2,11,Satisfactory,3,1,3,2,2,11,Satisfactory
+S08,Yes,Sara Ahmed,52,Female,No,Good,,S08-C,C,15,15.14,2,3,2,2,3,12,Optimal,3,2,2,3,3,13,Optimal
+S08,Yes,Sara Ahmed,52,Female,No,Good,,S08-D,D,60,61.10,3,2,3,3,2,13,Optimal,3,2,3,3,2,13,Optimal
+S08,Yes,Sara Ahmed,52,Female,No,Good,,S08-E,E,1440,1441.35,3,2,3,2,2,12,Optimal,3,2,2,2,2,11,Satisfactory
+S09,Yes,Hassan Yousif,49,Male,No,Fair,Follow-up visit,S09-A,A,1,1.37,2,2,2,1,2,9,Satisfactory,2,1,2,1,2,8,Satisfactory
+S09,Yes,Hassan Yousif,49,Male,No,Fair,Follow-up visit,S09-B,B,10,10.13,2,2,2,3,2,11,Satisfactory,2,2,2,3,2,11,Satisfactory
+S09,Yes,Hassan Yousif,49,Male,No,Fair,Follow-up visit,S09-C,C,15,15.19,2,3,3,2,3,13,Optimal,2,3,2,3,3,13,Optimal
+S09,Yes,Hassan Yousif,49,Male,No,Fair,Follow-up visit,S09-D,D,60,60.09,2,3,2,3,3,13,Optimal,2,3,2,3,3,13,Optimal
+S09,Yes,Hassan Yousif,49,Male,No,Fair,Follow-up visit,S09-E,E,1440,1440.93,2,2,3,2,3,12,Optimal,2,1,3,2,3,11,Satisfactory
+S10,Yes,Reem Mohamed,34,Female,No,Poor,Follow-up visit,S10-A,A,1,1.19,1,2,1,2,2,8,Satisfactory,1,2,0,3,2,8,Satisfactory
+S10,Yes,Reem Mohamed,34,Female,No,Poor,Follow-up visit,S10-B,B,10,10.02,3,3,3,3,3,15,Optimal,3,2,3,3,3,14,Optimal
+S10,Yes,Reem Mohamed,34,Female,No,Poor,Follow-up visit,S10-C,C,15,15.06,2,3,3,3,2,13,Optimal,2,3,3,3,2,13,Optimal
+S10,Yes,Reem Mohamed,34,Female,No,Poor,Follow-up visit,S10-D,D,60,60.65,3,3,3,3,3,15,Optimal,3,3,3,3,3,15,Optimal
+S10,Yes,Reem Mohamed,34,Female,No,Poor,Follow-up visit,S10-E,E,1440,1440.76,3,2,3,2,3,13,Optimal,2,2,3,3,2,12,Optimal
+S11,Yes,Hawa Ahmed,55,Female,Yes,Good,Recent dental work,S11-A,A,1,1.15,2,2,1,2,2,9,Satisfactory,2,2,1,2,2,9,Satisfactory
+S11,Yes,Hawa Ahmed,55,Female,Yes,Good,Recent dental work,S11-B,B,10,10.39,2,2,1,3,1,9,Satisfactory,2,2,1,3,1,9,Satisfactory
+S11,Yes,Hawa Ahmed,55,Female,Yes,Good,Recent dental work,S11-C,C,15,15.28,2,2,2,3,2,11,Satisfactory,2,3,3,3,2,13,Optimal
+S11,Yes,Hawa Ahmed,55,Female,Yes,Good,Recent dental work,S11-D,D,60,60.61,2,3,3,2,2,12,Optimal,2,3,3,2,2,12,Optimal
+S11,Yes,Hawa Ahmed,55,Female,Yes,Good,Recent dental work,S11-E,E,1440,1441.61,3,3,3,2,2,13,Optimal,3,3,3,1,2,12,Optimal
+S12,Yes,Khalid Khalid,52,Male,No,Good,,S12-A,A,1,1.02,2,2,2,2,2,10,Satisfactory,1,2,2,2,2,9,Satisfactory
+S12,Yes,Khalid Khalid,52,Male,No,Good,,S12-B,B,10,10.18,2,2,2,2,1,9,Satisfactory,2,1,2,2,1,8,Satisfactory
+S12,Yes,Khalid Khalid,52,Male,No,Good,,S12-C,C,15,15.36,3,2,3,3,2,13,Optimal,3,2,3,3,2,13,Optimal
+S12,Yes,Khalid Khalid,52,Male,No,Good,,S12-D,D,60,61.05,3,2,3,3,2,13,Optimal,3,1,3,3,3,13,Optimal
+S12,Yes,Khalid Khalid,52,Male,No,Good,,S12-E,E,1440,1442.36,2,2,3,2,2,11,Satisfactory,2,2,3,3,2,12,Optimal
+S13,Yes,Ahmed Osman,60,Male,No,Good,Slight cheek irritation,S13-A,A,1,1.36,1,2,2,2,2,9,Satisfactory,1,2,2,2,2,9,Satisfactory
+S13,Yes,Ahmed Osman,60,Male,No,Good,Slight cheek irritation,S13-B,B,10,10.20,3,2,3,2,2,12,Optimal,3,2,3,3,2,13,Optimal
+S13,Yes,Ahmed Osman,60,Male,No,Good,Slight cheek irritation,S13-C,C,15,15.38,2,3,2,2,3,12,Optimal,2,3,2,3,3,13,Optimal
+S13,Yes,Ahmed Osman,60,Male,No,Good,Slight cheek irritation,S13-D,D,60,60.25,3,3,3,2,3,14,Optimal,3,3,3,2,3,14,Optimal
+S13,Yes,Ahmed Osman,60,Male,No,Good,Slight cheek irritation,S13-E,E,1440,1442.42,2,2,3,3,2,12,Optimal,1,2,3,2,2,10,Satisfactory
+S14,Yes,Maha Ali,25,Female,No,Good,,S14-A,A,1,1.25,2,1,1,2,1,7,Satisfactory,2,2,1,2,1,8,Satisfactory
+S14,Yes,Maha Ali,25,Female,No,Good,,S14-B,B,10,10.27,3,3,2,3,2,13,Optimal,3,3,2,3,2,13,Optimal
+S14,Yes,Maha Ali,25,Female,No,Good,,S14-C,C,15,15.11,3,3,2,2,3,13,Optimal,3,3,2,3,3,14,Optimal
+S14,Yes,Maha Ali,25,Female,No,Good,,S14-D,D,60,61.45,2,3,3,3,2,13,Optimal,2,3,3,2,2,12,Optimal
+S14,Yes,Maha Ali,25,Female,No,Good,,S14-E,E,1440,1440.48,2,3,2,3,3,13,Optimal,2,3,1,3,3,12,Optimal
+S15,Yes,Ibrahim Ahmed,45,Male,No,Poor,,S15-A,A,1,1.13,2,2,2,2,1,9,Satisfactory,3,2,1,3,2,11,Satisfactory
+S15,Yes,Ibrahim Ahmed,45,Male,No,Poor,,S15-B,B,10,10.24,3,1,2,3,3,12,Optimal,2,1,3,3,3,12,Optimal
+S15,Yes,Ibrahim Ahmed,45,Male,No,Poor,,S15-C,C,15,15.09,3,2,3,2,3,13,Optimal,2,2,3,2,3,12,Optimal
+S15,Yes,Ibrahim Ahmed,45,Male,No,Poor,,S15-D,D,60,60.61,3,3,3,2,2,13,Optimal,3,3,3,2,2,13,Optimal
+S15,Yes,Ibrahim Ahmed,45,Male,No,Poor,,S15-E,E,1440,1440.07,2,2,2,2,3,11,Satisfactory,2,3,2,2,3,12,Optimal
+S16,Yes,Hiba Ali,58,Female,No,Fair,,S16-A,A,1,1.41,1,1,1,2,1,6,Poor,1,1,2,2,0,6,Poor
+S16,Yes,Hiba Ali,58,Female,No,Fair,,S16-B,B,10,10.13,2,2,2,2,2,10,Satisfactory,2,2,2,2,2,10,Satisfactory
+S16,Yes,Hiba Ali,58,Female,No,Fair,,S16-C,C,15,15.15,2,3,2,3,2,12,Optimal,1,3,1,3,2,10,Satisfactory
+S16,Yes,Hiba Ali,58,Female,No,Fair,,S16-D,D,60,60.12,3,2,3,3,2,13,Optimal,3,2,3,2,2,12,Optimal
+S16,Yes,Hiba Ali,58,Female,No,Fair,,S16-E,E,1440,1440.62,2,3,2,3,3,13,Optimal,2,2,3,3,3,13,Optimal
+S17,Yes,Maha Omer,43,Female,No,Fair,,S17-A,A,1,1.28,2,2,1,1,1,7,Satisfactory,2,2,0,2,1,7,Satisfactory
+S17,Yes,Maha Omer,43,Female,No,Fair,,S17-B,B,10,10.06,3,2,3,2,2,12,Optimal,3,2,3,2,2,12,Optimal
+S17,Yes,Maha Omer,43,Female,No,Fair,,S17-C,C,15,15.14,2,2,2,3,2,11,Satisfactory,2,3,2,3,2,12,Optimal
+S17,Yes,Maha Omer,43,Female,No,Fair,,S17-D,D,60,60.85,3,2,3,2,2,12,Optimal,3,2,3,3,2,13,Optimal
+S17,Yes,Maha Omer,43,Female,No,Fair,,S17-E,E,1440,1442.01,3,2,3,3,2,13,Optimal,2,2,3,3,1,11,Satisfactory
+S18,Yes,Mariam Mohamed,42,Female,No,Fair,Cooperative patient,S18-A,A,1,1.02,2,1,2,2,2,9,Satisfactory,2,0,2,2,2,8,Satisfactory
+S18,Yes,Mariam Mohamed,42,Female,No,Fair,Cooperative patient,S18-B,B,10,10.37,2,3,3,2,2,12,Optimal,2,3,2,2,2,11,Satisfactory
+S18,Yes,Mariam Mohamed,42,Female,No,Fair,Cooperative patient,S18-C,C,15,15.03,2,3,3,3,3,14,Optimal,2,3,2,3,3,13,Optimal
+S18,Yes,Mariam Mohamed,42,Female,No,Fair,Cooperative patient,S18-D,D,60,60.46,3,2,2,3,3,13,Optimal,3,2,1,3,3,12,Optimal
+S18,Yes,Mariam Mohamed,42,Female,No,Fair,Cooperative patient,S18-E,E,1440,1442.34,2,2,2,3,2,11,Satisfactory,2,2,2,3,1,10,Satisfactory
+S19,Yes,Sara Omer,39,Female,No,Fair,,S19-A,A,1,1.26,1,1,2,2,1,7,Satisfactory,1,2,2,2,1,8,Satisfactory
+S19,Yes,Sara Omer,39,Female,No,Fair,,S19-B,B,10,10.38,2,3,2,1,2,10,Satisfactory,2,3,2,1,2,10,Satisfactory
+S19,Yes,Sara Omer,39,Female,No,Fair,,S19-C,C,15,15.28,3,2,3,3,2,13,Optimal,3,1,3,3,3,13,Optimal
+S19,Yes,Sara Omer,39,Female,No,Fair,,S19-D,D,60,60.11,3,3,2,2,2,12,Optimal,3,3,2,2,3,13,Optimal
+S19,Yes,Sara Omer,39,Female,No,Fair,,S19-E,E,1440,1442.89,3,2,2,2,3,12,Optimal,3,2,2,1,3,11,Satisfactory
+S20,Yes,Aisha Yousif,41,Female,No,Good,,S20-A,A,1,1.19,2,2,1,1,1,7,Satisfactory,3,2,1,1,1,8,Satisfactory
+S20,Yes,Aisha Yousif,41,Female,No,Good,,S20-B,B,10,10.25,3,1,3,1,3,11,Satisfactory,2,1,2,1,3,9,Satisfactory
+S20,Yes,Aisha Yousif,41,Female,No,Good,,S20-C,C,15,15.16,2,3,3,3,2,13,Optimal,2,3,2,3,2,12,Optimal
+S20,Yes,Aisha Yousif,41,Female,No,Good,,S20-D,D,60,60.85,3,3,2,3,3,14,Optimal,3,3,2,3,3,14,Optimal
+S20,Yes,Aisha Yousif,41,Female,No,Good,,S20-E,E,1440,1442.73,2,2,3,2,2,11,Satisfactory,2,2,3,1,2,10,Satisfactory
+S21,Yes,Osman Hassan,57,Male,No,Good,Dry mouth reported,S21-A,A,1,1.05,1,2,2,2,1,8,Satisfactory,2,2,2,3,0,9,Satisfactory
+S21,Yes,Osman Hassan,57,Male,No,Good,Dry mouth reported,S21-B,B,10,10.12,2,3,2,3,3,13,Optimal,2,3,2,3,3,13,Optimal
+S21,Yes,Osman Hassan,57,Male,No,Good,Dry mouth reported,S21-C,C,15,15.12,2,3,2,2,2,11,Satisfactory,2,2,2,2,1,9,Satisfactory
+S21,Yes,Osman Hassan,57,Male,No,Good,Dry mouth reported,S21-D,D,60,60.13,2,3,3,2,3,13,Optimal,2,3,3,2,3,13,Optimal
+S21,Yes,Osman Hassan,57,Male,No,Good,Dry mouth reported,S21-E,E,1440,1442.31,3,3,2,3,3,14,Optimal,3,2,1,3,3,12,Optimal
+S22,Yes,Sara Mahmoud,29,Female,No,Good,Recent dental work,S22-A,A,1,1.33,1,2,2,1,1,7,Satisfactory,0,3,2,1,0,6,Poor
+S22,Yes,Sara Mahmoud,29,Female,No,Good,Recent dental work,S22-B,B,10,10.22,3,2,2,2,1,10,Satisfactory,3,2,2,2,2,11,Satisfactory
+S22,Yes,Sara Mahmoud,29,Female,No,Good,Recent dental work,S22-C,C,15,15.15,2,3,3,3,2,13,Optimal,3,3,3,3,2,14,Optimal
+S22,Yes,Sara Mahmoud,29,Female,No,Good,Recent dental work,S22-D,D,60,61.48,2,2,3,3,2,12,Optimal,2,2,3,3,2,12,Optimal
+S22,Yes,Sara Mahmoud,29,Female,No,Good,Recent dental work,S22-E,E,1440,1440.66,3,2,3,3,3,14,Optimal,3,2,3,3,3,14,Optimal
+S23,Yes,Ali Mahmoud,47,Male,No,Good,Dry mouth reported,S23-A,A,1,1.25,1,2,1,1,2,7,Satisfactory,1,2,0,2,2,7,Satisfactory
+S23,Yes,Ali Mahmoud,47,Male,No,Good,Dry mouth reported,S23-B,B,10,10.37,2,3,2,3,3,13,Optimal,2,3,2,3,3,13,Optimal
+S23,Yes,Ali Mahmoud,47,Male,No,Good,Dry mouth reported,S23-C,C,15,15.09,3,2,2,2,3,12,Optimal,3,2,2,2,3,12,Optimal
+S23,Yes,Ali Mahmoud,47,Male,No,Good,Dry mouth reported,S23-D,D,60,60.33,2,2,3,2,2,11,Satisfactory,2,2,3,3,2,12,Optimal
+S23,Yes,Ali Mahmoud,47,Male,No,Good,Dry mouth reported,S23-E,E,1440,1442.50,2,3,2,3,2,12,Optimal,3,3,2,3,3,14,Optimal
+S24,Yes,Maha Ibrahim,45,Female,No,Poor,,S24-A,A,1,1.26,1,2,2,2,1,8,Satisfactory,2,2,2,2,1,9,Satisfactory
+S24,Yes,Maha Ibrahim,45,Female,No,Poor,,S24-B,B,10,10.04,2,2,2,2,2,10,Satisfactory,2,2,2,2,2,10,Satisfactory
+S24,Yes,Maha Ibrahim,45,Female,No,Poor,,S24-C,C,15,15.24,3,3,2,3,3,14,Optimal,3,2,1,3,3,12,Optimal
+S24,Yes,Maha Ibrahim,45,Female,No,Poor,,S24-D,D,60,60.45,3,2,3,3,2,13,Optimal,3,3,3,3,2,14,Optimal
+S24,Yes,Maha Ibrahim,45,Female,No,Poor,,S24-E,E,1440,1442.41,3,2,3,3,2,13,Optimal,3,1,3,3,2,12,Optimal
+S25,Yes,Rania Ahmed,24,Female,No,Fair,Cooperative patient,S25-A,A,1,1.35,2,2,1,1,2,8,Satisfactory,2,3,1,1,2,9,Satisfactory
+S25,Yes,Rania Ahmed,24,Female,No,Fair,Cooperative patient,S25-B,B,10,10.35,2,3,3,2,3,13,Optimal,1,3,3,2,3,12,Optimal
+S25,Yes,Rania Ahmed,24,Female,No,Fair,Cooperative patient,S25-C,C,15,15.40,2,3,2,3,3,13,Optimal,3,3,2,2,3,13,Optimal
+S25,Yes,Rania Ahmed,24,Female,No,Fair,Cooperative patient,S25-D,D,60,60.43,3,3,3,3,2,14,Optimal,3,3,3,3,2,14,Optimal
+S25,Yes,Rania Ahmed,24,Female,No,Fair,Cooperative patient,S25-E,E,1440,1441.02,3,3,2,3,3,14,Optimal,3,2,3,2,2,12,Optimal
+S26,Yes,Reem Ahmed,47,Female,No,Good,,S26-A,A,1,1.21,2,1,1,2,2,8,Satisfactory,1,1,1,2,3,8,Satisfactory
+S26,Yes,Reem Ahmed,47,Female,No,Good,,S26-B,B,10,10.39,3,2,2,2,2,11,Satisfactory,3,2,2,2,2,11,Satisfactory
+S26,Yes,Reem Ahmed,47,Female,No,Good,,S26-C,C,15,15.07,2,3,3,2,3,13,Optimal,3,2,3,1,3,12,Optimal
+S26,Yes,Reem Ahmed,47,Female,No,Good,,S26-D,D,60,60.42,2,3,3,2,2,12,Optimal,2,3,3,1,2,11,Satisfactory
+S26,Yes,Reem Ahmed,47,Female,No,Good,,S26-E,E,1440,1442.66,3,2,2,2,3,12,Optimal,3,2,2,2,3,12,Optimal
+S27,Yes,Ahmed Ahmed,39,Male,No,Fair,,S27-A,A,1,1.36,1,2,2,2,2,9,Satisfactory,1,2,2,3,3,11,Satisfactory
+S27,Yes,Ahmed Ahmed,39,Male,No,Fair,,S27-B,B,10,10.02,1,3,2,2,2,10,Satisfactory,1,3,2,2,2,10,Satisfactory
+S27,Yes,Ahmed Ahmed,39,Male,No,Fair,,S27-C,C,15,15.40,2,3,2,3,3,13,Optimal,2,3,2,3,3,13,Optimal
+S27,Yes,Ahmed Ahmed,39,Male,No,Fair,,S27-D,D,60,60.25,3,3,3,2,2,13,Optimal,3,3,3,2,2,13,Optimal
+S27,Yes,Ahmed Ahmed,39,Male,No,Fair,,S27-E,E,1440,1442.62,2,3,3,3,3,14,Optimal,2,3,3,2,3,13,Optimal
+S28,Yes,Safia Ahmed,45,Female,No,Good,,S28-A,A,1,1.24,2,1,1,1,2,7,Satisfactory,1,1,1,2,2,7,Satisfactory
+S28,Yes,Safia Ahmed,45,Female,No,Good,,S28-B,B,10,10.28,3,3,1,2,2,11,Satisfactory,3,2,1,1,2,9,Satisfactory
+S28,Yes,Safia Ahmed,45,Female,No,Good,,S28-C,C,15,15.37,2,3,3,3,2,13,Optimal,2,3,3,3,2,13,Optimal
+S28,Yes,Safia Ahmed,45,Female,No,Good,,S28-D,D,60,60.54,3,3,3,3,3,15,Optimal,3,3,3,2,2,13,Optimal
+S28,Yes,Safia Ahmed,45,Female,No,Good,,S28-E,E,1440,1441.67,2,3,2,2,2,11,Satisfactory,2,3,3,2,1,11,Satisfactory
+S29,Yes,Yousif Adam,25,Male,No,Poor,,S29-A,A,1,1.33,1,1,2,2,2,8,Satisfactory,1,1,2,2,1,7,Satisfactory
+S29,Yes,Yousif Adam,25,Male,No,Poor,,S29-B,B,10,10.39,2,2,3,2,2,11,Satisfactory,2,2,3,2,2,11,Satisfactory
+S29,Yes,Yousif Adam,25,Male,No,Poor,,S29-C,C,15,15.03,2,2,3,3,2,12,Optimal,2,3,3,3,1,12,Optimal
+S29,Yes,Yousif Adam,25,Male,No,Poor,,S29-D,D,60,61.31,3,3,3,3,2,14,Optimal,3,2,3,3,2,13,Optimal
+S29,Yes,Yousif Adam,25,Male,No,Poor,,S29-E,E,1440,1441.50,2,3,2,2,3,12,Optimal,2,2,2,2,2,10,Satisfactory
+S30,Yes,Omar Hassan,19,Male,No,Good,,S30-A,A,1,1.41,2,2,1,2,2,9,Satisfactory,2,2,1,3,2,10,Satisfactory
+S30,Yes,Omar Hassan,19,Male,No,Good,,S30-B,B,10,10.07,2,2,2,2,1,9,Satisfactory,2,2,2,2,1,9,Satisfactory
+S30,Yes,Omar Hassan,19,Male,No,Good,,S30-C,C,15,15.23,2,3,3,2,2,12,Optimal,2,3,2,3,3,13,Optimal
+S30,Yes,Omar Hassan,19,Male,No,Good,,S30-D,D,60,61.44,3,2,3,3,2,13,Optimal,3,2,2,3,2,12,Optimal
+S30,Yes,Omar Hassan,19,Male,No,Good,,S30-E,E,1440,1442.64,2,3,2,3,2,12,Optimal,2,3,2,3,2,12,Optimal
+S31,Yes,Zainab Mohamed,45,Female,No,Good,,S31-A,A,1,1.23,1,2,2,2,1,8,Satisfactory,1,2,2,2,1,8,Satisfactory
+S31,Yes,Zainab Mohamed,45,Female,No,Good,,S31-B,B,10,10.03,3,1,2,2,2,10,Satisfactory,3,1,2,2,2,10,Satisfactory
+S31,Yes,Zainab Mohamed,45,Female,No,Good,,S31-C,C,15,15.27,3,2,2,3,3,13,Optimal,2,2,2,3,3,12,Optimal
+S31,Yes,Zainab Mohamed,45,Female,No,Good,,S31-D,D,60,61.15,3,3,3,2,3,14,Optimal,3,2,3,2,3,13,Optimal
+S31,Yes,Zainab Mohamed,45,Female,No,Good,,S31-E,E,1440,1442.92,3,2,2,2,3,12,Optimal,3,3,2,2,2,12,Optimal
+S32,Yes,Hiba Osman,54,Female,No,Fair,Cooperative patient,S32-A,A,1,1.07,2,1,2,2,2,9,Satisfactory,2,1,2,2,2,9,Satisfactory
+S32,Yes,Hiba Osman,54,Female,No,Fair,Cooperative patient,S32-B,B,10,10.39,1,1,2,3,2,9,Satisfactory,1,1,2,3,1,8,Satisfactory
+S32,Yes,Hiba Osman,54,Female,No,Fair,Cooperative patient,S32-C,C,15,15.31,2,3,3,3,2,13,Optimal,2,3,3,3,2,13,Optimal
+S32,Yes,Hiba Osman,54,Female,No,Fair,Cooperative patient,S32-D,D,60,60.09,3,3,3,2,2,13,Optimal,3,3,3,2,2,13,Optimal
+S32,Yes,Hiba Osman,54,Female,No,Fair,Cooperative patient,S32-E,E,1440,1442.88,2,2,2,2,2,10,Satisfactory,2,3,2,1,2,10,Satisfactory
+S33,Yes,Mariam Ali,38,Female,No,Fair,,S33-A,A,1,1.22,2,2,1,2,2,9,Satisfactory,1,2,1,2,1,7,Satisfactory
+S33,Yes,Mariam Ali,38,Female,No,Fair,,S33-B,B,10,10.03,3,2,3,2,2,12,Optimal,3,2,2,2,1,10,Satisfactory
+S33,Yes,Mariam Ali,38,Female,No,Fair,,S33-C,C,15,15.25,2,2,3,3,3,13,Optimal,3,2,2,3,3,13,Optimal
+S33,Yes,Mariam Ali,38,Female,No,Fair,,S33-D,D,60,60.30,2,3,3,2,3,13,Optimal,2,3,3,2,3,13,Optimal
+S33,Yes,Mariam Ali,38,Female,No,Fair,,S33-E,E,1440,1440.82,2,3,2,3,2,12,Optimal,2,3,2,3,2,12,Optimal
+S34,Yes,Ibrahim Mahmoud,42,Male,No,Fair,,S34-A,A,1,1.26,1,2,1,2,2,8,Satisfactory,1,1,2,2,2,8,Satisfactory
+S34,Yes,Ibrahim Mahmoud,42,Male,No,Fair,,S34-B,B,10,10.26,1,2,1,2,3,9,Satisfactory,1,2,1,2,2,8,Satisfactory
+S34,Yes,Ibrahim Mahmoud,42,Male,No,Fair,,S34-C,C,15,15.32,3,3,2,3,3,14,Optimal,3,3,2,3,3,14,Optimal
+S34,Yes,Ibrahim Mahmoud,42,Male,No,Fair,,S34-D,D,60,61.02,3,3,3,3,3,15,Optimal,3,3,3,2,3,14,Optimal
+S34,Yes,Ibrahim Mahmoud,42,Male,No,Fair,,S34-E,E,1440,1442.33,3,3,3,2,2,13,Optimal,3,3,3,2,2,13,Optimal
+S35,Yes,Sara Yousif,37,Female,No,Fair,Sensitive gums,S35-A,A,1,1.34,2,2,2,2,2,10,Satisfactory,2,3,1,2,2,10,Satisfactory
+S35,Yes,Sara Yousif,37,Female,No,Fair,Sensitive gums,S35-B,B,10,10.41,2,3,3,2,3,13,Optimal,2,3,3,2,3,13,Optimal
+S35,Yes,Sara Yousif,37,Female,No,Fair,Sensitive gums,S35-C,C,15,15.06,3,3,2,3,2,13,Optimal,3,3,2,3,3,14,Optimal
+S35,Yes,Sara Yousif,37,Female,No,Fair,Sensitive gums,S35-D,D,60,60.83,3,2,2,2,3,12,Optimal,3,2,3,2,3,13,Optimal
+S35,Yes,Sara Yousif,37,Female,No,Fair,Sensitive gums,S35-E,E,1440,1441.72,2,3,2,3,2,12,Optimal,2,3,3,3,1,12,Optimal
+S36,Yes,Rania Mahmoud,32,Female,No,Fair,,S36-A,A,1,1.39,1,2,2,1,1,7,Satisfactory,1,3,2,1,1,8,Satisfactory
+S36,Yes,Rania Mahmoud,32,Female,No,Fair,,S36-B,B,10,10.35,1,2,3,2,1,9,Satisfactory,0,3,3,2,0,8,Satisfactory
+S36,Yes,Rania Mahmoud,32,Female,No,Fair,,S36-C,C,15,15.09,3,3,3,2,3,14,Optimal,3,3,3,2,3,14,Optimal
+S36,Yes,Rania Mahmoud,32,Female,No,Fair,,S36-D,D,60,61.10,2,3,3,3,3,14,Optimal,3,3,3,3,3,15,Optimal
+S36,Yes,Rania Mahmoud,32,Female,No,Fair,,S36-E,E,1440,1442.97,2,2,3,2,2,11,Satisfactory,2,2,3,1,1,9,Satisfactory
+S37,Yes,Adam Adam,45,Male,No,Good,Dry mouth reported,S37-A,A,1,1.16,1,2,2,2,2,9,Satisfactory,1,1,2,1,2,7,Satisfactory
+S37,Yes,Adam Adam,45,Male,No,Good,Dry mouth reported,S37-B,B,10,10.14,2,1,2,3,2,10,Satisfactory,2,0,1,3,2,8,Satisfactory
+S37,Yes,Adam Adam,45,Male,No,Good,Dry mouth reported,S37-C,C,15,15.20,3,3,3,3,3,15,Optimal,3,3,2,3,3,14,Optimal
+S37,Yes,Adam Adam,45,Male,No,Good,Dry mouth reported,S37-D,D,60,60.88,3,3,2,3,3,14,Optimal,3,3,2,3,3,14,Optimal
+S37,Yes,Adam Adam,45,Male,No,Good,Dry mouth reported,S37-E,E,1440,1442.09,3,3,3,2,3,14,Optimal,2,3,3,2,3,13,Optimal
+S38,Yes,Yasir Adam,46,Male,No,Fair,Cooperative patient,S38-A,A,1,1.35,2,1,2,1,1,7,Satisfactory,2,1,2,1,0,6,Poor
+S38,Yes,Yasir Adam,46,Male,No,Fair,Cooperative patient,S38-B,B,10,10.16,2,2,2,2,1,9,Satisfactory,2,2,2,2,1,9,Satisfactory
+S38,Yes,Yasir Adam,46,Male,No,Fair,Cooperative patient,S38-C,C,15,15.37,2,3,3,3,2,13,Optimal,1,3,3,3,1,11,Satisfactory
+S38,Yes,Yasir Adam,46,Male,No,Fair,Cooperative patient,S38-D,D,60,60.01,3,2,3,3,3,14,Optimal,3,2,3,2,3,13,Optimal
+S38,Yes,Yasir Adam,46,Male,No,Fair,Cooperative patient,S38-E,E,1440,1442.86,2,3,2,2,2,11,Satisfactory,2,3,3,3,2,13,Optimal
+S39,Yes,Mazin Mahmoud,20,Male,No,Fair,,S39-A,A,1,1.38,1,2,1,2,2,8,Satisfactory,1,2,1,2,2,8,Satisfactory
+S39,Yes,Mazin Mahmoud,20,Male,No,Fair,,S39-B,B,10,10.25,3,3,2,2,2,12,Optimal,3,3,2,2,2,12,Optimal
+S39,Yes,Mazin Mahmoud,20,Male,No,Fair,,S39-C,C,15,15.35,2,2,3,3,3,13,Optimal,2,2,2,3,3,12,Optimal
+S39,Yes,Mazin Mahmoud,20,Male,No,Fair,,S39-D,D,60,60.86,2,3,2,2,3,12,Optimal,2,3,2,2,3,12,Optimal
+S39,Yes,Mazin Mahmoud,20,Male,No,Fair,,S39-E,E,1440,1440.46,2,3,3,2,3,13,Optimal,2,3,3,2,3,13,Optimal
+S40,Yes,Ibrahim Hassan,23,Male,Yes,Good,Follow-up visit,S40-A,A,1,1.26,1,2,1,1,2,7,Satisfactory,1,3,1,1,2,8,Satisfactory
+S40,Yes,Ibrahim Hassan,23,Male,Yes,Good,Follow-up visit,S40-B,B,10,10.18,3,2,3,3,2,13,Optimal,3,2,3,3,2,13,Optimal
+S40,Yes,Ibrahim Hassan,23,Male,Yes,Good,Follow-up visit,S40-C,C,15,15.12,3,2,3,3,3,14,Optimal,3,2,3,3,3,14,Optimal
+S40,Yes,Ibrahim Hassan,23,Male,Yes,Good,Follow-up visit,S40-D,D,60,60.86,2,3,3,2,3,13,Optimal,3,3,3,2,3,14,Optimal
+S40,Yes,Ibrahim Hassan,23,Male,Yes,Good,Follow-up visit,S40-E,E,1440,1442.48,2,2,3,2,3,12,Optimal,2,2,3,2,3,12,Optimal
