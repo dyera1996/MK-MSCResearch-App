@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MK MSC Research App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🧪 MK MSC Research App</h1>
+        <div class="sub">Comparative evaluation of fixation times on Papanicolaou-stained buccal smears</div>
+    </header>
+
+    <nav class="tabs" id="tabs">
+        <button data-tab="dashboard" class="active">📊 Dashboard</button>
+        <button data-tab="reception">📋 Reception</button>
+        <button data-tab="fixation">⏱ Fixation</button>
+        <button data-tab="staining">🎨 Staining</button>
+        <button data-tab="clearmount">💧 Clear &amp; Mount</button>
+        <button data-tab="scoring">🔬 Scoring</button>
+        <button data-tab="timing">📈 Timing</button>
+        <button data-tab="data">💾 Data</button>
+        <button data-tab="settings">⚙ Settings</button>
+    </nav>
+
+    <main>
+
+        <section id="tab-dashboard" class="tab active">
+            <div class="hero-card" id="heroCard">
+                <div class="hero-title">📊 Study Progress <span id="heroSimBadge"></span></div>
+                <div class="hero-metrics">
+                    <div class="hero-metric">
+                        <div class="hm-label">Patients registered</div>
+                        <div class="hm-value"><span id="heroPatients">0</span><span class="hm-of">/ <span
+                                    id="heroMaxPatients">40</span></span></div>
+                        <div class="hm-bar">
+                            <div class="hm-fill" id="heroPatientsBar" style="width:0%"></div>
+                        </div>
+                    </div>
+                    <div class="hero-metric">
+                        <div class="hm-label">Slides scored</div>
+                        <div class="hm-value"><span id="heroScored">0</span><span class="hm-of">/ <span
+                                    id="heroTargetSlides">200</span></span></div>
+                        <div class="hm-bar">
+                            <div class="hm-fill" id="heroScoredBar" style="width:0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="actionQueue"></div>
+
+            <div class="card">
+                <h2>Progress by fixation group</h2>
+                <div class="group-progress" id="groupProgress"></div>
+            </div>
+
+            <div class="card">
+                <h2>Slide status breakdown</h2>
+                <div class="grid" id="stats"></div>
+            </div>
+
+            <div class="card demo"
+                style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+                <div>
+                    <div style="font-weight:700;font-size:.9rem">🎲 Preview the finished state</div>
+                    <div class="muted" style="margin-top:2px">Adds simulated patients (SIM badge) matching your current
+                        settings</div>
+                </div>
+                <button class="btn purple sm" onclick="simulateFullWork()">Simulate Full Work</button>
+            </div>
+
+            <div class="card">
+                <details>
+                    <summary style="cursor:pointer;font-weight:700;font-size:.9rem">📖 Workflow guide</summary>
+                    <p class="muted" style="line-height:1.7;margin:12px 0 0">
+                        <b>1. Reception</b> → Register a patient.<br>
+                        <b>2. Fixation</b> → Click each slide chip as you put it in fixative. Clock time = pull
+                        time.<br>
+                        <b>3. Staining</b> → Select from empty container, run protocol step by step.<br>
+                        <b>4. Clear &amp; Mount</b> → Physically verify, then confirm each slide.<br>
+                        <b>5. Scoring</b> → Tap score buttons for Observer 1 and Observer 2.<br>
+                        <b>6. Timing</b> → Full per-patient timeline with delays and durations.<br>
+                        <b>7. Data</b> → Export CSV/JSON after each session.
+                    </p>
+                </details>
+                <div class="row"><button class="btn ghost sm" onclick="testSound()">🔔 Test sound</button></div>
+            </div>
+        </section>
+
+        <section id="tab-reception" class="tab">
+            <div class="toolbar">
+                <button class="btn" onclick="openRegister()">+ Register patient</button>
+                <input id="searchInput" placeholder="🔍 Search by ID, name, or slide code…" oninput="renderPatients()">
+                <select id="sortSelect" onchange="setPatientSort(this.value)">
+                    <option value="newest">Sort: Newest first</option>
+                    <option value="oldest">Sort: Oldest first</option>
+                    <option value="id-asc">Sort: ID (A→Z)</option>
+                    <option value="id-desc">Sort: ID (Z→A)</option>
+                    <option value="name-asc">Sort: Name (A→Z)</option>
+                    <option value="name-desc">Sort: Name (Z→A)</option>
+                </select>
+            </div>
+            <div class="filter-bar" id="filterBar"></div>
+            <div id="patientList"></div>
+        </section>
+
+        <section id="tab-fixation" class="tab">
+            <div id="nextPullBanner"></div>
+
+            <div class="card">
+                <div class="card-head">
+                    <h2 style="margin:0">⏱ Active fixation</h2>
+                    <span class="muted" id="fixationSummary"></span>
+                </div>
+                <p class="muted" style="margin-top:0">Click a <b>pending</b> chip to start that slide's fixation. Click
+                    a <b style="color:#dc2626">READY</b> chip to take it to the empty container. Clock time under each
+                    chip = pull time.</p>
+                <div id="fixationActive"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <h2 style="margin:0">📅 Today's pull schedule</h2>
+                    <span class="muted" id="scheduleSummary"></span>
+                </div>
+                <p class="muted" style="margin-top:0">All upcoming and overdue pulls across active patients, sorted by
+                    clock time.</p>
+                <div id="todaySchedule"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <h2 style="margin:0">📦 Empty container (air-drying)</h2>
+                    <button class="btn ghost sm" onclick="goToTab('staining')">Go to Staining →</button>
+                </div>
+                <p class="muted" style="margin-top:0">Slides removed from fixative and air-drying. Ready to stain when
+                    you start the next batch.</p>
+                <div id="fixationContainer"></div>
+            </div>
+        </section>
+
+        <section id="tab-staining" class="tab">
+            <div class="card">
+                <h2>1. Select slides from empty container</h2>
+                <p class="muted" style="margin-top:0">Slides appear here once you take them to the empty container for
+                    air-drying.</p>
+                <div id="stainSelect"></div>
+                <div class="row">
+                    <button class="btn" id="btnStartBatch" onclick="startBatch()" disabled>Start batch (<span
+                            id="selCount">0</span> selected)</button>
+                    <button class="btn ghost" onclick="clearSel()">Clear</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-head" style="margin-bottom:8px">
+                    <h2 style="margin:0">2. Staining protocol <span class="muted"
+                            style="font-size:.75rem;font-weight:500" id="protocolStepCount">· 11 steps</span></h2>
+                    <button class="btn ghost sm" onclick="goToTab('settings')">⚙ Edit in Settings</button>
+                </div>
+                <p class="muted" style="margin-top:0">Each step must be started manually with <b>▶ Start step</b>.
+                    Batches keep their own frozen protocol snapshot even if you edit it later.</p>
+                <div id="activeBatches"></div>
+            </div>
+
+            <div class="card">
+                <h2>Batch history</h2>
+                <div id="batchHistory"></div>
+            </div>
+        </section>
+
+        <section id="tab-clearmount" class="tab">
+            <div class="card">
+                <h2>💧 Confirm clear &amp; mount</h2>
+                <p class="muted" style="margin-top:0">
+                    These slides have completed the staining batch. Physically verify they were cleared in xylene and
+                    mounted with DPX,
+                    then click <b>✓ Confirm</b> to mark them ready for scoring.
+                </p>
+                <div id="clearMountList"></div>
+            </div>
+        </section>
+
+        <section id="tab-scoring" class="tab">
+            <div class="card">
+                <h2>Quality scoring</h2>
+                <p class="muted" style="margin-top:0">
+                    5 parameters × 0–3 = 15 points. Classification: <b>Optimal 12–15</b> · <b>Satisfactory 7–11</b> ·
+                    <b>Poor 2–6</b> · <b>Non-diagnostic 0–1</b>.
+                </p>
+            </div>
+            <div id="scoreSummary"></div>
+            <div id="scoreList"></div>
+        </section>
+
+        <section id="tab-timing" class="tab">
+            <div class="card">
+                <div class="card-head">
+                    <h2 style="margin:0">📈 Timing report</h2>
+                    <button class="btn ghost sm" onclick="exportTimingCSV()">⬇ Export timing CSV</button>
+                </div>
+                <p class="muted" style="margin-top:0">Full per-patient timeline: fixation start, per-slide durations,
+                    delays between slides, drying time, and staining durations. Live-updating.</p>
+            </div>
+            <div id="timingOverview"></div>
+            <div id="timingPatients"></div>
+        </section>
+
+        <section id="tab-data" class="tab">
+            <div class="card">
+                <h2>Export &amp; backup</h2>
+                <div class="row">
+                    <button class="btn" onclick="exportCSV()">⬇ Export slide scores (CSV)</button>
+                    <button class="btn ghost" onclick="exportStepTimings()">⬇ Export step timings (CSV)</button>
+                    <button class="btn ghost" onclick="exportTimingCSV()">⬇ Export timing report (CSV)</button>
+                    <button class="btn ghost" onclick="exportJSON()">⬇ Backup (JSON)</button>
+                    <button class="btn ghost" onclick="document.getElementById('importFile').click()">⬆ Restore</button>
+                    <input type="file" id="importFile" accept=".json" class="hidden" onchange="importJSON(event)">
+                </div>
+                <p class="muted" style="margin-top:12px">
+                    Data lives only in this browser. <b>Export a JSON backup after every collection day.</b>
+                </p>
+            </div>
+
+            <div class="card" id="simulatedCard">
+                <h2>Simulated data</h2>
+                <p class="muted" style="margin-top:0">Simulated patients are marked with a <span
+                        class="sim-badge">SIM</span> badge on their card and in the CSV export.</p>
+                <div id="simStats" style="margin-bottom:10px"></div>
+                <div class="row">
+                    <button class="btn danger" onclick="clearSimulated()">🗑 Remove all simulated patients</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Danger zone</h2>
+                <div class="row"><button class="btn danger" onclick="resetAll()">Delete ALL data (real +
+                        simulated)</button></div>
+            </div>
+        </section>
+
+        <section id="tab-settings" class="tab">
+            <div class="card">
+                <h2>📋 Study parameters</h2>
+                <div id="settingsLockBanner"></div>
+                <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+                    <div>
+                        <label>Maximum number of patients</label>
+                        <input id="setMaxPatients" type="number" min="1" max="1000" value="40">
+                        <p class="muted" style="margin-top:4px;font-size:.72rem">Used for progress bars and completion
+                            tracking.</p>
+                    </div>
+                    <div>
+                        <label>Number of fixation groups (= slides per patient)</label>
+                        <input id="setGroupCount" type="number" min="1" max="10" value="5"
+                            oninput="onGroupCountChange()">
+                        <p class="muted" style="margin-top:4px;font-size:.72rem">e.g. 5 groups = A, B, C, D, E = 5
+                            slides per patient.</p>
+                    </div>
+                </div>
+                <h3 style="font-size:.85rem;margin:16px 0 8px;color:#334155">Group labels, fixation times &amp;
+                    reference delays</h3>
+                <p class="muted" style="margin-top:0;font-size:.78rem">
+                    <b>Delay</b> = expected seconds between the first slide going in and this slide going in. Used as a
+                    reference guide — actual per-slide starts are recorded when you click each chip in Fixation.
+                </p>
+                <div id="groupEditor"></div>
+                <div class="row" style="margin-top:12px">
+                    <button class="btn" onclick="saveStudyParameters()">💾 Save study parameters</button>
+                    <button class="btn ghost" onclick="resetStudyParametersToDefault()">↺ Reset to default</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <h2 style="margin:0">🎨 Staining protocol</h2>
+                    <button class="btn" onclick="openProtocolEditor()">✏ Edit protocol</button>
+                </div>
+                <p class="muted" style="margin-top:0">
+                    Current: <b id="protocolStepCountSettings">11 steps</b> · Protocol version: <b
+                        id="protocolVersionDisplay">v1</b> · Total: <b id="protocolTotalTime">—</b>
+                </p>
+                <div class="protocol-preview" id="protocolPreview"></div>
+            </div>
+
+            <div class="card">
+                <h2>ℹ️ App info</h2>
+                <table class="tbl">
+                    <tbody>
+                        <tr>
+                            <td><b>App version</b></td>
+                            <td>v1.4.0</td>
+                        </tr>
+                        <tr>
+                            <td><b>Patients registered</b></td>
+                            <td id="infoPatientCount">0</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total slides</b></td>
+                            <td id="infoSlideCount">0</td>
+                        </tr>
+                        <tr>
+                            <td><b>Active batches</b></td>
+                            <td id="infoBatchCount">0</td>
+                        </tr>
+                        <tr>
+                            <td><b>Storage used (approx.)</b></td>
+                            <td id="infoStorage">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="toasts"></div>
+
+    <div id="modal-register" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-head"><b>Register new patient</b><button onclick="closeModal('modal-register')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="info-banner" style="margin-bottom:12px">
+                    <b>📌 After registering:</b> click each slide chip in the Fixation tab as you put it in
+                    fixative.<br>
+                    <span style="font-size:.78rem;opacity:.85">Order: <b>E + D</b> first (apposed), then <b>B + C</b>
+                        (apposed), then <b>A</b> alone. Each chip click records the exact time that slide entered
+                        fixative.</span>
+                </div>
+                <form id="regForm" onsubmit="registerPatient(event)">
+                    <label>Full name (optional)</label>
+                    <input id="f_name" placeholder="e.g. Patient name or leave blank">
+                    <div class="grid">
+                        <div><label>Age (years) *</label><input id="f_age" type="number" min="18" max="60" required>
+                        </div>
+                        <div><label>Sex</label><select id="f_sex">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select></div>
+                        <div><label>Smoking</label><select id="f_smoke">
+                                <option>No</option>
+                                <option>Yes</option>
+                            </select></div>
+                    </div>
+                    <label>Notes (optional)</label>
+                    <input id="f_notes" placeholder="Any remark">
+                    <div class="row">
+                        <button class="btn" type="submit">Register</button>
+                        <button class="btn ghost" type="button" onclick="closeModal('modal-register')">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-score" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-head"><b id="modalTitle">Score slide</b><button
+                    onclick="closeModal('modal-score')">✕</button></div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <div id="modal-protocol" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-head"><b id="protocolModalTitle">Edit staining protocol</b><button
+                    onclick="closeProtocolEditor()">✕</button></div>
+            <div class="modal-body" id="protocolBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
